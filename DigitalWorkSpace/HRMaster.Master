@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HRMaster.master.cs" Inherits="DigitalWorkSpace.HRMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" style="background-color:lawngreen">
+        <div align="left" style="background-color:lawngreen">
+        <asp:Image ID="imgHR" runat="server" ImageUrl="~/Images/HR.jpg" ImageAlign="Left" BorderColor="SkyBlue" Width="400px" Height="219px" />
+    
+     <br /><br /> <br /><br /><br /><br /> <br /><br /><br /><br />
+            
+            <div align="left">
+    <br /><br />
+        
+            <a href="HRHome.aspx" >Home</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="HRAttendence.aspx">Attendence</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="HRPaySlips.aspx">PaySlips</a>
+    </div>
+        
+        
+    </div>
+        <div align="right">Welcome To
+            <asp:Label ID="label1" runat="server" />
+            <asp:LinkButton ID="lbtnLogOut" runat="server" Text="LogOut" OnClick="lbtnLogOut_Click" />
+        </div>
+        
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

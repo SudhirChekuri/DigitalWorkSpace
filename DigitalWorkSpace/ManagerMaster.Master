@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ManagerMaster.master.cs" Inherits="DigitalWorkSpace.ManagerMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" style="background-color:mediumspringgreen">
+        <div align="left" style="background-color:mediumspringgreen" width="100%">
+        <asp:Image ID="imgmanager" runat="server" ImageUrl="~/Images/manager.jpg" ImageAlign="left" BackColor="RoyalBlue" Width="400" Height="200"  />
+    
+     <br /><br /> <br /><br /><br /><br /> <br /><br /><br /><br />
+            
+            <div align="left">
+    <br /><br />
+        
+            <a href="ManagerHome.aspx" >Home</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="ManagerUsers.aspx">Users</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="ManagerLeaves.aspx">Leaves</a>
+    </div>
+        
+        
+    </div>
+        <div align="right">Welcome To
+            <asp:Label ID="label1" runat="server" />
+            <asp:LinkButton ID="lbtnLogOut" runat="server" Text="LogOut" OnClick="lbtnLogOut_Click" />
+        </div>
+        
+        <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
